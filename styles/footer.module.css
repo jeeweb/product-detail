@@ -1,0 +1,49 @@
+.container {
+  color: #686868;
+  background-color: #f8f8f8;
+}
+
+.topSection {
+  padding: 4px 0;
+}
+
+.bottomSection {
+  padding: 24px 0;
+  border-top: 1px solid #ececec;
+  font-size: 0.84em;
+  line-height: 1.8;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1060px;
+}
+
+.topSection .inner {
+  align-items: center;
+}
+
+.bottomSection .inner {
+  align-items: flex-end;
+}
+
+.logo {
+  color: #959191;
+  font-size: 1.8em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.menuList {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menuLink {
+  display: block;
+  padding: 20px;
+  color: #a3a3a3;
+}

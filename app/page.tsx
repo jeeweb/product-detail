@@ -1,7 +1,10 @@
+import styles from "../styles/detail.module.css";
 export default function Home() {
   return (
     <>
-      <p>detail</p>
+      {/* Banner */}
+      {/* Tab */}
+      {/* Info */}
     </>
   );
 }

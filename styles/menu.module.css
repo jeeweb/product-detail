@@ -1,0 +1,9 @@
+.menuList {
+  display: flex;
+  align-items: center;
+}
+.menuLink {
+  display: block;
+  padding: 20px;
+  font-weight: 600;
+}

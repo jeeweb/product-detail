@@ -1,6 +1,10 @@
+import Header from "./_component/Header";
+import Nav from "./_component/Nav";
+import Footer from "./_component/Footer";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../styles/global.css";
+import styles from "../styles/common.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +20,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Nav />
+        <div className={styles.pageContainer}>
+          <div className={styles.inner}>
+            <Header />
+            {children}
+          </div>
+        </div>
+        <Footer />
+      </body>
     </html>
   );
 }
