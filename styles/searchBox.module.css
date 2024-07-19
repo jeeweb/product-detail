@@ -1,0 +1,42 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 14px;
+  width: 32%;
+  min-width: 320px;
+  border-radius: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid transparent;
+}
+.box:focus-within {
+  background-color: #fff;
+  border-color: #18aa9b;
+  transition: 0.4s;
+}
+
+.inputTextSearch {
+  flex: 1;
+}
+.inputTextSearch:focus {
+  border-color: transparent;
+}
+
+.btnSearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.btnSearch:hover {
+  background-color: #18aa9b;
+  transition: 0.4s;
+}
+
+.btnSearch:hover svg path:first-child {
+  fill: #fff;
+}

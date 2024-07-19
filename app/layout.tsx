@@ -23,10 +23,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <Nav />
         <div className={styles.pageContainer}>
-          <div className={styles.inner}>
-            <Header />
-            {children}
-          </div>
+          <Header />
+          {children}
         </div>
         <Footer />
       </body>

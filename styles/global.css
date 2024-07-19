@@ -148,12 +148,17 @@ input {
   color: inherit;
   background: inherit;
   border: inherit;
+  outline: none;
+}
+input::placeholder {
+  opacity: 0.64;
 }
 button {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
   background: inherit;
-  border: inherit;
+  border: none;
+  padding: 0;
   cursor: pointer;
 }
