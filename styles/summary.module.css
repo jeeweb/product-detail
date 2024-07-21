@@ -23,11 +23,16 @@
 }
 
 .infoBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
   margin: 0 auto;
   width: 1060px;
 }
 
 .courseName {
+  flex: 1;
   font-weight: 600;
 }
 
@@ -48,4 +53,11 @@
 
 .indicatorItem:first-child {
   padding-left: 0;
+}
+
+@media screen and (max-width: 1120px) {
+  .infoBox {
+    width: 100%;
+    padding: 0 24px;
+  }
 }
