@@ -12,6 +12,11 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+.containerFix {
+  position: sticky;
+  top: 138px;
+}
+
 .price {
   font-size: 1.6em;
   font-weight: 600;
@@ -105,4 +110,17 @@
 .shareList li:nth-child(4) .shareLink svg {
   width: 18px;
   height: 18px;
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    width: 280px;
+    padding: 1.6em 1.2em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    width: 100%;
+  }
 }

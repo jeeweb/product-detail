@@ -29,9 +29,13 @@ const convertTime = (value: number) => {
   return `${hours}시간 ${minutes}분`;
 };
 
-export default function AsideInfo() {
+export default function AsideInfo(isFix: { isFix: boolean }) {
   return (
-    <section className={styles.container}>
+    <section
+      className={
+        isFix ? `${styles.container} ${styles.containerFix}` : styles.container
+      }
+    >
       <p className={styles.price}>₩{mockData.price.toLocaleString("ko-KR")}</p>
       <div className={styles.orderGroup}>
         <button className={styles.btnCart}>

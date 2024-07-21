@@ -1,0 +1,51 @@
+@keyframes moveDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  padding: 12px 0;
+  background-color: #d8e6dd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: moveDown 0.4s ease forwards;
+  z-index: 90;
+}
+
+.infoBox {
+  margin: 0 auto;
+  width: 1060px;
+}
+
+.courseName {
+  font-weight: 600;
+}
+
+.indicatorGroup {
+  display: flex;
+}
+
+.indicatorItem {
+  position: relative;
+  padding: 8px 16px 0;
+  font-size: 0.86em;
+  color: #7e7c7c;
+}
+
+.indicatorItem.itemOn {
+  color: #18aa9b;
+}
+
+.indicatorItem:first-child {
+  padding-left: 0;
+}
