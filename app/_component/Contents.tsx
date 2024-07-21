@@ -17,11 +17,11 @@ export default function Contents() {
         position = scrollRef.current[0].getBoundingClientRect().top - 140;
         window.scrollTo({ top: position, behavior: "smooth" });
         break;
-      case "lecturer":
+      case "courses":
         position = scrollRef.current[1].getBoundingClientRect().top - 140;
         window.scrollTo({ top: position, behavior: "smooth" });
         break;
-      case "courses":
+      case "lecturer":
         position = scrollRef.current[2].getBoundingClientRect().top - 140;
         window.scrollTo({ top: position, behavior: "smooth" });
         break;
@@ -48,17 +48,17 @@ export default function Contents() {
         </button>
         <button
           className={styles.indicatorItem}
-          value="lecturer"
-          onClick={scrollToArticle}
-        >
-          강사
-        </button>
-        <button
-          className={styles.indicatorItem}
           value="courses"
           onClick={scrollToArticle}
         >
           목차
+        </button>
+        <button
+          className={styles.indicatorItem}
+          value="lecturer"
+          onClick={scrollToArticle}
+        >
+          강사
         </button>
         <button
           className={styles.indicatorItem}
@@ -79,10 +79,10 @@ export default function Contents() {
         <Introduction />
       </div>
       <div ref={(el: any) => (scrollRef.current[1] = el)}>
-        <Lecturer />
+        <Courses />
       </div>
       <div ref={(el: any) => (scrollRef.current[2] = el)}>
-        <Courses />
+        <Lecturer />
       </div>
       <div ref={(el: any) => (scrollRef.current[3] = el)}>
         <OtherContents />
