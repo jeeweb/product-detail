@@ -27,3 +27,21 @@
   fill: #111;
   transition: 0.4s;
 }
+
+@media screen and (max-width: 1120px) {
+  .header {
+    width: 100%;
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    gap: 8px;
+  }
+
+  .btnCart {
+    width: 20px;
+    height: 20px;
+  }
+}

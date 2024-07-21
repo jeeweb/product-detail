@@ -10,6 +10,7 @@
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
+  z-index: 10;
 }
 
 .containerFix {
@@ -121,6 +122,40 @@
 
 @media screen and (max-width: 750px) {
   .container {
-    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    width: calc(100vw - 48px);
+  }
+
+  .containerFix {
+    position: fixed;
+    top: calc(100vh - 80px);
+  }
+
+  .price {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+
+  .btnCart {
+    width: 36px;
+    height: 36px;
+  }
+
+  .btnCart svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .btnPayment {
+    height: 36px;
+    padding: 0 24px;
+  }
+
+  .infoList,
+  .shareList {
+    display: none;
   }
 }

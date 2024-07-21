@@ -2,8 +2,28 @@
   display: flex;
   align-items: center;
 }
+
 .menuLink {
   display: block;
   padding: 20px;
   font-weight: 600;
+}
+
+.menuList li:first-child .menuLink {
+  padding-left: 0;
+}
+
+.menuList li:last-child .menuLink {
+  padding-right: 0;
+}
+
+.accountList .menuLink {
+  color: #7e7c7c;
+}
+
+@media screen and (max-width: 600px) {
+  .menuLink {
+    padding: 20px 12px;
+    font-size: 0.84em;
+  }
 }

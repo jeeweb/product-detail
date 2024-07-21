@@ -43,7 +43,7 @@ export default function AsideInfo(isFix: { isFix: boolean }) {
         </button>
         <button className={styles.btnPayment}>바로 결제</button>
       </div>
-      <ul>
+      <ul className={styles.infoList}>
         <li className={styles.infoItem}>카테고리: {mockData.category}</li>
         <li className={styles.infoItem}>강사명: {mockData.lecturer}</li>
         <li className={styles.infoItem}>

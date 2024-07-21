@@ -18,6 +18,7 @@
 .indicatorItem.itemOn {
   color: #18aa9b;
 }
+
 .indicatorItem.itemOn:after {
   content: "";
   position: absolute;
@@ -52,9 +53,6 @@
   margin-top: 2em;
 }
 
-.lecturer {
-}
-
 .experience {
   margin-top: 1em;
 }
@@ -64,6 +62,7 @@
   border: 1px solid #efefef;
   border-radius: 10px;
 }
+
 .courseItem {
   display: flex;
   align-items: center;
@@ -138,6 +137,10 @@
   border-bottom: 1px solid #efefef;
 }
 
+.reviewItem:first-child {
+  border-top: 1px solid #efefef;
+}
+
 .reviewName {
   font-weight: 600;
 }
@@ -202,4 +205,14 @@
 
 .policyItem > div {
   padding: 0 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .courseList {
+    padding: 0.8em;
+  }
+
+  .courseItem {
+    padding: 16px 8px;
+  }
 }

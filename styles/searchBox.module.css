@@ -40,3 +40,14 @@
 .btnSearch:hover svg path:first-child {
   fill: #fff;
 }
+
+@media screen and (max-width: 600px) {
+  .box {
+    display: none;
+  }
+
+  .btnSearch {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -108,7 +108,7 @@ export default function Reviews() {
         {/* (추가하기) 리뷰 제한된 수만큼 보이고 그 이상은 더보기 버튼으로 load 혹은 pagination */}
         {mockData.reviews.length > 0 ? (
           mockData.reviews.map((review, idx) => (
-            <div key={idx} className={styles.reviewItem}>
+            <div key={review.createdAt + idx} className={styles.reviewItem}>
               <div className={styles.reviewAuthor}>
                 {/* avatar */}
                 <span className={styles.reviewName}>{review.username}</span>
@@ -122,7 +122,10 @@ export default function Reviews() {
               </div>
               {review.reply
                 ? review.reply.map((item, idx) => (
-                    <div key={idx} className={styles.reviewReply}>
+                    <div
+                      key={item.createdAt + idx}
+                      className={styles.reviewReply}
+                    >
                       <div className={styles.reviewReplyAuthor}>
                         {item.isLecturer ? (
                           <span className={styles.badgeLecturer}>강사</span>
