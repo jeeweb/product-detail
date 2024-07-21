@@ -8,14 +8,16 @@ import Summary from "./_component/Summary";
 import { useCallback, useEffect, useState } from "react";
 
 export default function Home() {
+  const [showSummary, setShowSummary] = useState(false);
+  const [fixAsideInfo, setfixAsideInfo] = useState(false);
+
   useEffect(() => {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => {
       window.removeEventListener("scroll", onScroll);
     };
   });
-  const [showSummary, setShowSummary] = useState(false);
-  const [fixAsideInfo, setfixAsideInfo] = useState(false);
+
   const onScroll = useCallback(() => {
     const { scrollY } = window;
     //console.log("scrollY", scrollY);
